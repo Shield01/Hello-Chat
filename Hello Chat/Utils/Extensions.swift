@@ -87,30 +87,30 @@ extension UIView {
 
 // MARK: - UIColor
 
-extension UIColor {
-    static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
-    }
-    
-    static let twitterBlue = UIColor.rgb(red: 29, green: 161, blue: 242)
-    
-    static let gray_dark = UIColor.rgb(red: 34, green: 34, blue: 34)
-    static let gray = UIColor.rgb(red: 153, green: 153, blue: 153)
-    static let gray_light = UIColor.rgb(red: 232, green: 232, blue: 232)
-    static let white = UIColor.rgb(red: 255, green: 255, blue: 255)
-    
-    static let deep_purple_gradient = UIColor.rgb(red: 140, green: 81, blue: 165)
-    static let faint_purple_gradient = UIColor.rgb(red: 203, green: 94, blue: 152)
-    
-    static let deep_blue_gradient = UIColor.rgb(red: 0, green: 76, blue: 162)
-    static let faint_blue_gradient = UIColor.rgb(red: 40, green: 81, blue: 65)
-    
-    static let deep_coral_gradient = UIColor.rgb(red: 244, green: 123, blue: 138)
-    static let faint_coral_gradient = UIColor.rgb(red: 255, green: 163, blue: 127)
-    
-    static let deep_yellow_gradient = UIColor.rgb(red: 255, green: 210, blue: 133)
-    static let faint_yellow_gradient = UIColor.rgb(red: 255, green: 255, blue: 165)
-}
+//extension UIColor {
+//    static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
+//        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
+//    }
+//    
+//    static let twitterBlue = UIColor.rgb(red: 29, green: 161, blue: 242)
+//    
+//    static let grayDark = UIColor.rgb(red: 34, green: 34, blue: 34)
+//    static let gray = UIColor.rgb(red: 153, green: 153, blue: 153)
+//    static let gray_light = UIColor.rgb(red: 232, green: 232, blue: 232)
+//    static let white = UIColor.rgb(red: 255, green: 255, blue: 255)
+//    
+//    static let deepPurpleGradient = UIColor.rgb(red: 140, green: 81, blue: 165)
+//    static let faintPurpleGradient = UIColor.rgb(red: 203, green: 94, blue: 152)
+//    
+//    static let deep_blue_gradient = UIColor.rgb(red: 0, green: 76, blue: 162)
+//    static let faint_blue_gradient = UIColor.rgb(red: 40, green: 81, blue: 65)
+//    
+//    static let deep_coral_gradient = UIColor.rgb(red: 244, green: 123, blue: 138)
+//    static let faint_coral_gradient = UIColor.rgb(red: 255, green: 163, blue: 127)
+//    
+//    static let deep_yellow_gradient = UIColor.rgb(red: 255, green: 210, blue: 133)
+//    static let faint_yellow_gradient = UIColor.rgb(red: 255, green: 255, blue: 165)
+//}
 
 //MARK: UIFont
 

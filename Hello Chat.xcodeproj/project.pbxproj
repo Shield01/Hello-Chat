@@ -17,6 +17,9 @@
 		D9AE81B22B0E91B800D5DA37 /* SF-Compact-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9AE81B12B0E91B800D5DA37 /* SF-Compact-Display-Medium.otf */; };
 		D9AE81B42B0E91C900D5DA37 /* SF-Compact-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9AE81B32B0E91C900D5DA37 /* SF-Compact-Display-Thin.otf */; };
 		D9AE81B62B0E9CAE00D5DA37 /* SF-Compact-Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9AE81B52B0E9CAE00D5DA37 /* SF-Compact-Display-Bold.ttf */; };
+		D9AE81B92B0FEAD800D5DA37 /* HelloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */; };
+		D9AE81BB2B0FF9B600D5DA37 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */; };
+		D9AE81BD2B1008BE00D5DA37 /* HelloFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		D9AE81B12B0E91B800D5DA37 /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
 		D9AE81B32B0E91C900D5DA37 /* SF-Compact-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Thin.otf"; sourceTree = "<group>"; };
 		D9AE81B52B0E9CAE00D5DA37 /* SF-Compact-Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Bold.ttf"; sourceTree = "<group>"; };
+		D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloButton.swift; sourceTree = "<group>"; };
+		D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
+		D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		D9A0F2C72B0E4FB800B72158 /* Hello Chat */ = {
 			isa = PBXGroup;
 			children = (
+				D9AE81B72B0FEA4800D5DA37 /* Components */,
 				D9A0F2E82B0E7E4300B72158 /* Fonts */,
 				D9A0F2E12B0E69B100B72158 /* Controllers */,
 				D9A0F2DC2B0E5A0C00B72158 /* Utils */,
@@ -101,6 +108,16 @@
 				D9AE81B52B0E9CAE00D5DA37 /* SF-Compact-Display-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D9AE81B72B0FEA4800D5DA37 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */,
+				D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */,
+				D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +197,10 @@
 				D9A0F2CD2B0E4FB800B72158 /* ViewController.swift in Sources */,
 				D9A0F2C92B0E4FB800B72158 /* AppDelegate.swift in Sources */,
 				D9A0F2CB2B0E4FB800B72158 /* SceneDelegate.swift in Sources */,
+				D9AE81BD2B1008BE00D5DA37 /* HelloFont.swift in Sources */,
 				D9A0F2E02B0E5A7A00B72158 /* Extensions.swift in Sources */,
+				D9AE81BB2B0FF9B600D5DA37 /* HelloColor.swift in Sources */,
+				D9AE81B92B0FEAD800D5DA37 /* HelloButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

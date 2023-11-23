@@ -13,11 +13,11 @@ class IntroViewController : UIViewController{
     
     private let bubbleIconView : UIImageView = {
         var image = UIImage(named: "bubble")
-        image = image?.tintedWithLinearGradientColors(colorsArr: [UIColor.deep_purple_gradient.cgColor, UIColor.faint_purple_gradient.cgColor])
+        image = image?.tintedWithLinearGradientColors(colorsArr: [UIColor.deepPurpleGradient.cgColor, UIColor.faintPurpleGradient.cgColor])
         let imageView = UIImageView(image: image)
         imageView.clipsToBounds = true
         imageView.setDimensions(width: 32, height: 32)
-        imageView.tintColor = .deep_purple_gradient
+        imageView.tintColor = .deepPurpleGradient
         return imageView
     }()
     
@@ -26,7 +26,7 @@ class IntroViewController : UIViewController{
         label.attributedText = generateAttributedString(with: "Hello", and: "Chat")
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
-        label.gradientColors = [UIColor.deep_purple_gradient.cgColor, UIColor.faint_purple_gradient.cgColor]
+        label.gradientColors = [UIColor.deepPurpleGradient.cgColor, UIColor.faintPurpleGradient.cgColor]
         label.preferredMaxLayoutWidth = 115
         return label
     }()
@@ -40,23 +40,27 @@ class IntroViewController : UIViewController{
     }()
     
     private let createAccountButton : UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Create Account", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .gray_dark
-        button.titleLabel?.font = UIFont(name: "SFCompactDisplay-Bold", size: 18)
-        button.setDimensions(width: 175, height: 54)
-        button.layer.cornerRadius = 27
+        let button = HelloButton(
+            text: "Create Account",
+            titleLabelColor: .white,
+            buttonHeight: 54,
+            buttonWidth: 175,
+            controlState: .normal,
+            color: .grayDark,
+            font: .SFCompactBold18!
+        )
         return button
     }()
     
     private lazy var loginButton : UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Login", for: .normal)
-        button.titleLabel?.font = UIFont(name: "SFCompactDisplay-Bold", size: 18)
-        button.setTitleColor(.gray_dark, for: .normal)
-        button.backgroundColor = .white
-        button.setDimensions(width: 78, height: 24)
+        let button = HelloButton(
+            text: "Login",
+            titleLabelColor: .black,
+            buttonHeight: 24,
+            buttonWidth: 78,
+            controlState: .normal,
+            font: .SFCompactBold18!
+        )
         return button
     }()
     
@@ -68,8 +72,6 @@ class IntroViewController : UIViewController{
     
     private lazy var loginStackView : UIStackView = {
         let stack = UIStackView(arrangedSubviews: [loginButton, chevronImageView])
-        stack.spacing = 1
-        stack.distribution = .equalCentering
         return stack
     }()
     
