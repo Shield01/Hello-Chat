@@ -21,7 +21,7 @@ class IntroViewController : UIViewController{
         return imageView
     }()
     
-    private lazy var welcomeLabel : GradientLabel = {
+    private lazy var welcomeLabel : HelloLabel = {
         let label = HelloLabel(
             labelType: .GradientLabel,
             content: generateAttributedString(with: "Hello", and: "Chat"),
@@ -39,7 +39,7 @@ class IntroViewController : UIViewController{
         return stack
     }()
     
-    private let createAccountButton : UIButton = {
+    private let createAccountButton : HelloButton = {
         let button = HelloButton(
             text: "Create Account",
             titleLabelColor: .white,
@@ -52,7 +52,7 @@ class IntroViewController : UIViewController{
         return button
     }()
     
-    private lazy var loginButton : UIButton = {
+    private lazy var loginButton : HelloButton = {
         let button = HelloButton(
             text: "Login",
             titleLabelColor: .black,
