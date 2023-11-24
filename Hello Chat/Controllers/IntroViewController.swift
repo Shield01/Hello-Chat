@@ -22,12 +22,12 @@ class IntroViewController : UIViewController{
     }()
     
     private lazy var welcomeLabel : GradientLabel = {
-        let label = GradientLabel()
-        label.attributedText = generateAttributedString(with: "Hello", and: "Chat")
-        label.lineBreakMode = .byWordWrapping
-        label.numberOfLines = 0
-        label.gradientColors = [UIColor.deepPurpleGradient.cgColor, UIColor.faintPurpleGradient.cgColor]
-        label.preferredMaxLayoutWidth = 115
+        let label = HelloLabel(
+            labelType: .GradientLabel,
+            content: generateAttributedString(with: "Hello", and: "Chat"),
+            contentColors: [UIColor.deepPurpleGradient.cgColor, UIColor.faintPurpleGradient.cgColor],
+            maximumWidth: 115
+        )
         return label
     }()
     

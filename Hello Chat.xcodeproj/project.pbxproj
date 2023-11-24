@@ -20,6 +20,7 @@
 		D9AE81B92B0FEAD800D5DA37 /* HelloButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */; };
 		D9AE81BB2B0FF9B600D5DA37 /* HelloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */; };
 		D9AE81BD2B1008BE00D5DA37 /* HelloFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */; };
+		D9AE81BF2B10121100D5DA37 /* HelloLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE81BE2B10121100D5DA37 /* HelloLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloButton.swift; sourceTree = "<group>"; };
 		D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloColor.swift; sourceTree = "<group>"; };
 		D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloFont.swift; sourceTree = "<group>"; };
+		D9AE81BE2B10121100D5DA37 /* HelloLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D9AE81B82B0FEAD800D5DA37 /* HelloButton.swift */,
 				D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */,
 				D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */,
+				D9AE81BE2B10121100D5DA37 /* HelloLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A0F2E52B0E6CCC00B72158 /* Utilities.swift in Sources */,
+				D9AE81BF2B10121100D5DA37 /* HelloLabel.swift in Sources */,
 				D9A0F2E32B0E69E600B72158 /* IntroViewController.swift in Sources */,
 				D9A0F2CD2B0E4FB800B72158 /* ViewController.swift in Sources */,
 				D9A0F2C92B0E4FB800B72158 /* AppDelegate.swift in Sources */,
