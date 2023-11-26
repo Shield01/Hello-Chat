@@ -7,48 +7,37 @@
 
 import UIKit
 
-enum LabelType {
-    case Label
-    case GradientLabel
-}
+class HelloLabel : UILabel {
+    
+    public var content : Any {
+        didSet{
+            initialize()
+        }
+    }
+    
+    public var contentFont : UIFont? {
+        didSet{
+            initialize()
+        }
+    }
+    
+    public var contentColor : UIColor? {
+        didSet{
+            initialize()
+        }
+    }
 
-class HelloLabel : GradientLabel{
-    
-    public var labelType : LabelType{
+    public var maximumWidth : CGFloat? {
         didSet{
             initialize()
         }
     }
-    
-    public var content : Any{
+    public var labelWidth : CGFloat? {
         didSet{
             initialize()
         }
     }
-    
-    public var contentColor : UIColor?{
-        didSet{
-            initialize()
-        }
-    }
-    
-    public var contentColors: [CGColor]?{
-        didSet{
-            initialize()
-        }
-    }
-    
-    public var maximumWidth : CGFloat?{
-        didSet{
-            initialize()
-        }
-    }
-    public var labelWidth : CGFloat?{
-        didSet{
-            initialize()
-        }
-    }
-    public var labelNumberOfLines : Int{
+    public var labelNumberOfLines : Int {
         didSet{
             initialize()
         }
@@ -56,31 +45,29 @@ class HelloLabel : GradientLabel{
     
     
     init(
-        labelType : LabelType,
         content : Any,
+        contentFont : UIFont? = nil,
         contentColor : UIColor? = nil,
         contentColors : [CGColor]? = nil,
         maximumWidth : CGFloat? = nil,
         labelWidth : CGFloat? = nil,
         labelNumberOfLines : Int = 0
     ){
-        self.labelType = labelType
-        
         self.content = content
+        
+        if let contentFont = contentFont {
+            self.contentFont = contentFont
+        }
         
         if let contentColor = contentColor {
             self.contentColor = contentColor
         }
         
-        if let contentColors = contentColors{
-            self.contentColors = contentColors
-        }
-        
-        if let maximumWidth = maximumWidth{
+        if let maximumWidth = maximumWidth {
             self.maximumWidth = maximumWidth
         }
         
-        if let labelWidth = labelWidth{
+        if let labelWidth = labelWidth {
             self.labelWidth = labelWidth
         }
         
@@ -97,30 +84,28 @@ class HelloLabel : GradientLabel{
     
     func initialize(){
         setText()
-        setAttributedText()
+        setFont()
         setLabelColor()
         setWidth()
         setNumberOfLines()
     }
     
     func setText(){
-        guard let content = content as? String else { return }
-        text = content
+        if let content = content as? String{
+            text = content
+        }else if let content = content as? NSAttributedString{
+            attributedText = content
+        }
     }
     
-    func setAttributedText(){
-        guard let content = content as? NSAttributedString else { return }
-        attributedText = content
+    func setFont(){
+        guard let content = content as? String else { return }
+        font = contentFont
     }
     
     func setLabelColor(){
-        if labelType == .Label {
             guard let contentColor = contentColor else { return }
             textColor = contentColor
-        }else{
-            guard let contentColors = contentColors else { return }
-            gradientColors = contentColors
-        }
     }
     
     func setWidth(){
@@ -133,5 +118,66 @@ class HelloLabel : GradientLabel{
     
     func setNumberOfLines(){
         numberOfLines = labelNumberOfLines
+    }
+}
+
+
+class GradientLabel: HelloLabel {
+    var gradientColors: [CGColor] = []
+    
+    override init(
+        content: Any,
+        contentFont : UIFont? = nil,
+        contentColor: UIColor? = nil,
+        contentColors: [CGColor]? = nil,
+        maximumWidth: CGFloat? = nil,
+        labelWidth: CGFloat? = nil,
+        labelNumberOfLines: Int = 0
+    ) {
+        if let gradientColors = contentColors {
+            self.gradientColors = gradientColors
+        }
+        super.init(
+            content: content,
+            contentFont: contentFont,
+            contentColor: contentColor,
+            contentColors: contentColors,
+            maximumWidth: maximumWidth, 
+            labelWidth: labelWidth,
+            labelNumberOfLines: labelNumberOfLines
+        )
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func drawText(in rect: CGRect) {
+        if let gradientColor = drawGradientColor(in: rect, colors: gradientColors) {
+            self.textColor = gradientColor
+        }
+        super.drawText(in: rect)
+    }
+
+    private func drawGradientColor(in rect: CGRect, colors: [CGColor]) -> UIColor? {
+        let currentContext = UIGraphicsGetCurrentContext()
+        currentContext?.saveGState()
+        defer { currentContext?.restoreGState() }
+
+        let size = rect.size
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        guard let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(),
+                                        colors: colors as CFArray,
+                                        locations: nil) else { return nil }
+
+        let context = UIGraphicsGetCurrentContext()
+        context?.drawLinearGradient(gradient,
+                                    start: CGPoint.zero,
+                                    end: CGPoint(x: size.width, y: 0),
+                                    options: [])
+        let gradientImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        guard let image = gradientImage else { return nil }
+        return UIColor(patternImage: image)
     }
 }

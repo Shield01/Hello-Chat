@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D937A9C62B121C0600B8F0BD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D937A9C52B121C0600B8F0BD /* HomeController.swift */; };
+		D937A9C92B121D7900B8F0BD /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D937A9C82B121D7900B8F0BD /* HomeHeader.swift */; };
+		D937A9CB2B12294400B8F0BD /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D937A9CA2B12294400B8F0BD /* MessageCell.swift */; };
+		D985DD1C2B133FFB00432238 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985DD1B2B133FFB00432238 /* SearchController.swift */; };
+		D985DD1E2B13411700432238 /* SearchPageUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985DD1D2B13411700432238 /* SearchPageUserCell.swift */; };
+		D985DD202B13581200432238 /* SearchPageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985DD1F2B13581200432238 /* SearchPageHeaderView.swift */; };
+		D985DD222B13B2BE00432238 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985DD212B13B2BE00432238 /* ProfileController.swift */; };
+		D985DD242B13C0D800432238 /* HelloLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985DD232B13C0D800432238 /* HelloLine.swift */; };
+		D993BEE62B10A87E002DF7BF /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993BEE52B10A87E002DF7BF /* SignupController.swift */; };
+		D993BEE82B10AB82002DF7BF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993BEE72B10AB82002DF7BF /* LoginController.swift */; };
+		D993BEEA2B10E38C002DF7BF /* HelloTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993BEE92B10E38C002DF7BF /* HelloTextField.swift */; };
+		D993BEEC2B115538002DF7BF /* SignUpAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D993BEEB2B115538002DF7BF /* SignUpAboutController.swift */; };
+		D993BEEF2B116A5F002DF7BF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D993BEEE2B116A5F002DF7BF /* IQKeyboardManagerSwift */; };
 		D9A0F2C92B0E4FB800B72158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F2C82B0E4FB800B72158 /* AppDelegate.swift */; };
 		D9A0F2CB2B0E4FB800B72158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F2CA2B0E4FB800B72158 /* SceneDelegate.swift */; };
-		D9A0F2CD2B0E4FB800B72158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F2CC2B0E4FB800B72158 /* ViewController.swift */; };
 		D9A0F2D22B0E4FBA00B72158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9A0F2D12B0E4FBA00B72158 /* Assets.xcassets */; };
 		D9A0F2E02B0E5A7A00B72158 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F2DF2B0E5A7A00B72158 /* Extensions.swift */; };
 		D9A0F2E32B0E69E600B72158 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A0F2E22B0E69E600B72158 /* IntroViewController.swift */; };
@@ -24,10 +36,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D937A9C52B121C0600B8F0BD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D937A9C82B121D7900B8F0BD /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		D937A9CA2B12294400B8F0BD /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		D985DD1B2B133FFB00432238 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		D985DD1D2B13411700432238 /* SearchPageUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageUserCell.swift; sourceTree = "<group>"; };
+		D985DD1F2B13581200432238 /* SearchPageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageHeaderView.swift; sourceTree = "<group>"; };
+		D985DD212B13B2BE00432238 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		D985DD232B13C0D800432238 /* HelloLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloLine.swift; sourceTree = "<group>"; };
+		D993BEE52B10A87E002DF7BF /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		D993BEE72B10AB82002DF7BF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		D993BEE92B10E38C002DF7BF /* HelloTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloTextField.swift; sourceTree = "<group>"; };
+		D993BEEB2B115538002DF7BF /* SignUpAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAboutController.swift; sourceTree = "<group>"; };
 		D9A0F2C52B0E4FB800B72158 /* Hello Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A0F2C82B0E4FB800B72158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9A0F2CA2B0E4FB800B72158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9A0F2CC2B0E4FB800B72158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9A0F2D12B0E4FBA00B72158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9A0F2D62B0E4FBA00B72158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A0F2DF2B0E5A7A00B72158 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -47,12 +70,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D993BEEF2B116A5F002DF7BF /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D937A9C72B121D5E00B8F0BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D937A9C82B121D7900B8F0BD /* HomeHeader.swift */,
+				D937A9CA2B12294400B8F0BD /* MessageCell.swift */,
+				D985DD1D2B13411700432238 /* SearchPageUserCell.swift */,
+				D985DD1F2B13581200432238 /* SearchPageHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D9A0F2BC2B0E4FB800B72158 = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +107,13 @@
 		D9A0F2C72B0E4FB800B72158 /* Hello Chat */ = {
 			isa = PBXGroup;
 			children = (
+				D937A9C72B121D5E00B8F0BD /* Views */,
 				D9AE81B72B0FEA4800D5DA37 /* Components */,
 				D9A0F2E82B0E7E4300B72158 /* Fonts */,
 				D9A0F2E12B0E69B100B72158 /* Controllers */,
 				D9A0F2DC2B0E5A0C00B72158 /* Utils */,
 				D9A0F2C82B0E4FB800B72158 /* AppDelegate.swift */,
 				D9A0F2CA2B0E4FB800B72158 /* SceneDelegate.swift */,
-				D9A0F2CC2B0E4FB800B72158 /* ViewController.swift */,
 				D9A0F2D12B0E4FBA00B72158 /* Assets.xcassets */,
 				D9A0F2D62B0E4FBA00B72158 /* Info.plist */,
 			);
@@ -98,6 +133,12 @@
 			isa = PBXGroup;
 			children = (
 				D9A0F2E22B0E69E600B72158 /* IntroViewController.swift */,
+				D993BEE52B10A87E002DF7BF /* SignupController.swift */,
+				D993BEE72B10AB82002DF7BF /* LoginController.swift */,
+				D993BEEB2B115538002DF7BF /* SignUpAboutController.swift */,
+				D937A9C52B121C0600B8F0BD /* HomeController.swift */,
+				D985DD1B2B133FFB00432238 /* SearchController.swift */,
+				D985DD212B13B2BE00432238 /* ProfileController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +160,8 @@
 				D9AE81BA2B0FF9B600D5DA37 /* HelloColor.swift */,
 				D9AE81BC2B1008BE00D5DA37 /* HelloFont.swift */,
 				D9AE81BE2B10121100D5DA37 /* HelloLabel.swift */,
+				D993BEE92B10E38C002DF7BF /* HelloTextField.swift */,
+				D985DD232B13C0D800432238 /* HelloLine.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -139,6 +182,9 @@
 			dependencies = (
 			);
 			name = "Hello Chat";
+			packageProductDependencies = (
+				D993BEEE2B116A5F002DF7BF /* IQKeyboardManagerSwift */,
+			);
 			productName = "Hello Chat";
 			productReference = D9A0F2C52B0E4FB800B72158 /* Hello Chat.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +213,9 @@
 				Base,
 			);
 			mainGroup = D9A0F2BC2B0E4FB800B72158;
+			packageReferences = (
+				D993BEED2B116A5F002DF7BF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = D9A0F2C62B0E4FB800B72158 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,15 +245,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A0F2E52B0E6CCC00B72158 /* Utilities.swift in Sources */,
+				D993BEEA2B10E38C002DF7BF /* HelloTextField.swift in Sources */,
+				D993BEE82B10AB82002DF7BF /* LoginController.swift in Sources */,
+				D993BEEC2B115538002DF7BF /* SignUpAboutController.swift in Sources */,
+				D985DD242B13C0D800432238 /* HelloLine.swift in Sources */,
 				D9AE81BF2B10121100D5DA37 /* HelloLabel.swift in Sources */,
 				D9A0F2E32B0E69E600B72158 /* IntroViewController.swift in Sources */,
-				D9A0F2CD2B0E4FB800B72158 /* ViewController.swift in Sources */,
+				D985DD1C2B133FFB00432238 /* SearchController.swift in Sources */,
+				D993BEE62B10A87E002DF7BF /* SignupController.swift in Sources */,
 				D9A0F2C92B0E4FB800B72158 /* AppDelegate.swift in Sources */,
 				D9A0F2CB2B0E4FB800B72158 /* SceneDelegate.swift in Sources */,
 				D9AE81BD2B1008BE00D5DA37 /* HelloFont.swift in Sources */,
 				D9A0F2E02B0E5A7A00B72158 /* Extensions.swift in Sources */,
 				D9AE81BB2B0FF9B600D5DA37 /* HelloColor.swift in Sources */,
+				D985DD222B13B2BE00432238 /* ProfileController.swift in Sources */,
+				D937A9CB2B12294400B8F0BD /* MessageCell.swift in Sources */,
+				D985DD1E2B13411700432238 /* SearchPageUserCell.swift in Sources */,
+				D985DD202B13581200432238 /* SearchPageHeaderView.swift in Sources */,
+				D937A9C92B121D7900B8F0BD /* HomeHeader.swift in Sources */,
 				D9AE81B92B0FEAD800D5DA37 /* HelloButton.swift in Sources */,
+				D937A9C62B121C0600B8F0BD /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D993BEED2B116A5F002DF7BF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.16;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D993BEEE2B116A5F002DF7BF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D993BEED2B116A5F002DF7BF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9A0F2BD2B0E4FB800B72158 /* Project object */;
 }

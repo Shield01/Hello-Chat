@@ -17,13 +17,11 @@ class IntroViewController : UIViewController{
         let imageView = UIImageView(image: image)
         imageView.clipsToBounds = true
         imageView.setDimensions(width: 32, height: 32)
-        imageView.tintColor = .deepPurpleGradient
         return imageView
     }()
     
     private lazy var welcomeLabel : HelloLabel = {
-        let label = HelloLabel(
-            labelType: .GradientLabel,
+        let label = GradientLabel(
             content: generateAttributedString(with: "Hello", and: "Chat"),
             contentColors: [UIColor.deepPurpleGradient.cgColor, UIColor.faintPurpleGradient.cgColor],
             maximumWidth: 115
@@ -49,6 +47,7 @@ class IntroViewController : UIViewController{
             color: .grayDark,
             font: .SFCompactBold18!
         )
+        button.addTarget(self, action: #selector(createAccountButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -61,6 +60,7 @@ class IntroViewController : UIViewController{
             controlState: .normal,
             font: .SFCompactBold18!
         )
+        button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -138,6 +138,19 @@ class IntroViewController : UIViewController{
         
         return attributedString
     }
+    
+    //MARK: Selectors
+    @objc func createAccountButtonTapped(){
+        let controller = SignupController()
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
+    }
+    
+    @objc func loginButtonTapped(){
+        let controller = LoginController()
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
+    }
 }
-
-
